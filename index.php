@@ -173,6 +173,35 @@ $app_name = idx($app_info, 'name', '');
     <![endif]-->
   </head>
   <body>
+    
+    <script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '466863453473309',
+      xfbml      : true,
+      version    : 'v2.3'
+    });
+  };
+
+  (function(d, s, id){
+     var js, fjs = d.getElementsByTagName(s)[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement(s); js.id = id;
+     js.src = "//connect.facebook.net/en_US/sdk.js";
+     fjs.parentNode.insertBefore(js, fjs);
+   }(document, 'script', 'facebook-jssdk'));
+</script>
+
+
+<div
+  class="fb-like"
+  data-share="true"
+  data-width="450"
+  data-show-faces="true">
+</div>
+    
+    
+    
     <div id="fb-root"></div>
     <script type="text/javascript">
       window.fbAsyncInit = function() {
